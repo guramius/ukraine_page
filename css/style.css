@@ -1,0 +1,281 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Montserrat:wght@300&family=Poppins:wght@300&family=Red+Hat+Mono:ital,wght@1,300&display=swap');
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(21, 91, 114);
+    padding: 40px;
+    color: white;
+    line-height: 2;
+}
+.header h1{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 35px;
+}
+.header h1:hover{
+    background: -webkit-linear-gradient(blue, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.navLi{
+    display: flex;
+    gap: 10px;
+   
+}
+.navLi a{
+    color: white;
+}
+.navLi a:hover{
+    color: rgb(8, 36, 36);
+
+}
+.desc{
+    text-align: center;
+    background-color: rgb(21, 91, 114);
+    padding: 30px;
+    color: white;
+    font-size: 20px;
+    line-height: 2;
+}
+.desc h2{
+    color: rgba(44, 46, 56, 0.801);
+}
+.desc button{
+    border: none;
+    background: none;
+    padding: 15px 25px;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+.desc button:hover {
+    background-image: linear-gradient(blue,yellow);
+}
+/* news  */
+.news{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px;
+}
+.speakers{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.speakers img{
+    width: 300px;
+    border-radius: 5px;
+}
+.speakers img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.speakers p,h3 {
+    width: 300px;
+}
+.speakers p:hover{
+    background-image: linear-gradient(to right, rgba(49, 49, 49, 0.815) , rgb(231, 228, 228));
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    background-image: url(../img/Gerorgia&Ukraine.jpg);
+
+}
+.logo{
+    display: flex;
+    gap: 10px;
+}
+/* speakers page */
+.grad{
+    text-align: center;
+    background: #cbe2c1;
+    background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
+    background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
+    background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+    padding: 40px 0 22px 0;
+    font-size: 28px;
+    /* opacity: 0.8; */
+    line-height: 1.8;
+    color: darkslategrey;
+}
+.speaches{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 70px;
+    
+}
+
+.speach{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.speach h4{
+    font-size: 20px;
+    color: darkslategray;
+}
+.speach p{
+    width: 550px;
+    color: darkolivegreen;
+}
+.speach a{
+    color: black;
+    font-size: 17px;
+}
+.speach a:hover{
+    text-decoration: underline;
+    
+}
+.prezidents img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+.prezidents{
+    border:1px solid rgb(145, 143, 143);
+    border-radius: 5px;
+    text-align:center;
+    padding: 15px 10px;
+    line-height: 2.2;
+}
+.prezidents address:hover{
+    color: darkolivegreen;
+}
+.prezidents a{
+    color: black;
+    font-size: 18px;
+    text-decoration: underline;
+}
+.prezidents img{
+    margin-top: -70px;
+}
+
+/* Tables Pages */
+.MeinTable{
+    padding: 50px 200px;
+    opacity: 0.8;
+}
+.table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    line-height: 2;
+    width: 100%;
+    padding: 30px;
+  }
+  
+.table  td {
+    border-bottom: 1px solid gray;  
+    text-align: left;
+    padding: 8px;
+}
+.table th{
+    padding: 0 40px ;
+}
+.workshop{
+    font-size: 20px;
+    color: darkolivegreen;
+}
+.oppasity{
+    opacity: 0.7;
+}
+/* response */
+@media only screen and (min-width: 896) and (max-width: 1024px){
+    .news{
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (min-width: 483px) and (max-width: 895px){
+    .header{
+        display: block;
+    }
+    .news{
+        flex-wrap: wrap;
+    }
+    /* speaches page resposne */
+    .speaches{
+        flex-wrap: wrap-reverse;
+        /* flex-wrap: wrap; */
+    }
+    .speaches p{
+        width: 400px;
+    }
+    .prezidents{
+        margin-bottom: 20px;
+    }
+    /* schedule page */
+    .MeinTable{
+        padding: 20px;
+    }
+}
+@media only screen and (min-width: 375px) and (max-width: 483px){
+    .header{
+        display: block;
+    }
+    .news{
+        flex-wrap: wrap;
+    }
+    .navLi {
+        display: block;
+    }
+    /* speaches page resposne */
+    .speaches{
+        flex-wrap: wrap-reverse;
+        /* flex-wrap: wrap; */
+    }
+    .speaches p{
+        width: 300px;
+    }
+    .prezidents{
+        margin-bottom: 20px;
+    }
+    .MeinTable{
+        padding: 0;
+    }
+    .table th{
+        padding: 0;
+    }
+
+}
+@media only screen and (min-width: 300px) and (max-width: 374px){
+    .header{
+        display: block;
+    }
+    .news{
+        flex-wrap: wrap;
+    }
+    .navLi {
+        display: block;
+    }
+    /* speaches page resposne */
+    .speaches{
+        flex-wrap: wrap-reverse;
+        /* flex-wrap: wrap; */
+    }
+    .speaches p{
+        width: 250px;
+    }
+    .prezidents{
+        margin-bottom: 20px;
+    }
+    .MeinTable{
+        padding: 0;
+    }
+    .table th{
+        padding: 0;
+    }
+}
